@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="/static/main_script.js"></script>
+    <title>Bordle</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!--link rel="stylesheet" href="/static/style.css"-->
+</head>
+
+<body>
+    <div class="w3-container w3-card-4 w3-black">
+        <h2>
+            BORDLE
+        </h2>
+    </div>
+    <div class="w3-container">
+        <div class="w3-panel w3-card-4 w3-green">
+            <p>BORDLE is a website where you get to try your hand at drawing
+                different countries on a map! Get scored to see how accurate you were. Countries are currently randomly
+                chosen out of the largest 100 countries. Right click to add a point, left click to remove a point. Only
+                draw the largest landmass of the country and don't worry about holes. Good
+                luck!</p>
+        </div>
+        <div class="w3-card-4 w3-green ">
+            <div class="w3-green w3-container">
+                <h3>Draw <span class="country"></span> (<span class="iso"></span>)!</h3>
+            </div>
+            <div class="w3-white">
+                <canvas id="map"></canvas>
+                <div style="display:none;">
+                    <!-- This div does not display. It is just for canvas writing. -->
+                    <img id="source_map" src="/static/map.jpg">
+                </div>
+            </div>
+            <div class="w3-green w3-bar">
+                <button class="w3-button w3-hover-blue w3-bar-item" style="width:60%" onclick="compareCountry()">Submit
+                    and
+                    check against
+                    <span class="country"></span>.</button>
+                <button class="w3-button w3-hover-blue w3-bar-item w3-red" style="width:40%"
+                    onclick="window.onload(); document.getElementById('score viewer').style.visibility = 'hidden'">Get
+                    a
+                    new
+                    country.</button>
+            </div>
+        </div>
+        <div class="w3-panel w3-card-4 w3-green" style="visibility: hidden;" id="score viewer">
+            <p>
+                Your score is <span class="score"></span>%!
+            </p>
+        </div>
+
+</body>
+
+</html>
