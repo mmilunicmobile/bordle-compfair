@@ -3,8 +3,6 @@ import numpy
 import geopandas
 import shapely.geometry
 import shapely.validation
-import pandas
-import matplotlib.pyplot as plt
 import random
 from typing import Any, List, Tuple
 

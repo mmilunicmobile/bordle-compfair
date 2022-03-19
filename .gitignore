@@ -130,5 +130,4 @@ dmypy.json
 
 #custom stuff
 countries.geojson
-static/map.jpg
 .DS_Store
